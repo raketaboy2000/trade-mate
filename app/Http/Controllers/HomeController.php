@@ -10,7 +10,7 @@ class HomeController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @return void
+     * @return void test
      */
     public function __construct()
     {
