@@ -69,24 +69,49 @@
         }
     </style>
 
+    <?
+
+    //use Binance\API;
+    //    require 'vendor/jaggedsoft/php-binance-api/php-binance-api.php';
+    //    require 'vendor/autoload.php';
+
+    $api = new Binance\API("u5ZUqga77ekuzfIXX1rDeaYUoht1M2jBy98wFxMpgWBrT09fRubKatuist9zK7LJ", "ptLkhENqmxO93CNH3dguXfwhdE9TK5h1QZMV6ifS8D06AXVYRd7S8sWcSAFWuO5V");
+    $tickers = $api->prices();
 
 
-    <!-- TODO  СДЕЛАТЬ ЦИКЛ С БД-->
+    DB::statement('TRUNCATE TABLE currencies;');
+
+    foreach ($tickers as $key => $value) {
+        DB::insert('insert into currencies (name, value) values (?, ?)', [$key, $value]);
+
+
+    }
+    $names_value = DB::select('select name from currencies;');
+
+
+    ?>
+
+
 
     <select id="sel">
-        <option value="BNBUSDT">BNBUSDT</option>
-        <option value="MANABTC">MANABTC</option>
-        <option value="MANAETH">MANAETH</option>
-        <option value="BNBBTC">BNBBTC</option>
+
+        @foreach ($names_value as $nameItem)
+            <option value="{{ $nameItem->name }}">{{$nameItem->name }}</option>
+        @endforeach
+
+
     </select>
 
     <script>
-        $(function(){
-            $("#sel").change(function(){
-                <!-- TODO  СДЕЛАТЬ ЦИКЛ С БД ПО ВАЛЮТАМ-->
-                $("#BNBUSDT,#MANABTC,#MANAETH,#BNBBTC").css("display","none");
-                $("#"+$(this).val()).css("display","block");
-            });
+        window.activeGraphId = '#BNBUSDT';
+
+        $("#sel").change(e => {
+            let id = '#' + e.target.value;
+
+            $(window.activeGraphId).css("display", "none");
+            $(id).css("display", "block");
+
+            window.activeGraphId = id;
         });
     </script>
 
@@ -190,9 +215,6 @@
         <!-- TradingView Widget END -->
     </div>
     <div id="BNBBTC">
-
-
-
 
 
         <style>
