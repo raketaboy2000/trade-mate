@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ba525ad1-e6b0-4c11-a61b-10b6eac8079b" name="tritel" url="http://45.9.142.2/">
+        <fileTransfer host="45.9.142.2" port="22011" rootFolder="/home/webmaster/test" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22011" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
