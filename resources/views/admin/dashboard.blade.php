@@ -88,42 +88,60 @@
     }
     $names_value = DB::select('select name from currencies;');
 
-
+    $sel = $_GET['sel'];
     ?>
 
 
 
-    <select id="sel" autofocus=BNBUSDT>
-
-        @foreach ($names_value as $nameItem)
-            <option value="{{ $nameItem->name }}">{{$nameItem->name }}</option>
-        @endforeach
 
 
-    </select>
 
-    <script>
-        window.activeGraphId = '#MANABTC';
+    <form id="select" method="get">
+        <select id="sel" name="sel" >
 
-        $("#sel").change(e => {
-            let id = '#' + e.target.value;
+            @foreach ($names_value as $nameItem)
+                <option value="{{ $nameItem->name }}">{{$nameItem->name }}</option>
+            @endforeach
 
-            $(window.activeGraphId).css("display", "none");
-            $(id).css("display", "block");
 
-            window.activeGraphId = id;
-        });
-    </script>
+        </select>
+        <input type="submit">
+    </form>
+
+{{--    <script>--}}
+{{--        window.activeGraphId = '#MANABTC';--}}
+
+{{--        $("#sel").change(e => {--}}
+{{--            let id = '#' + e.target.value;--}}
+
+{{--            $(window.activeGraphId).css("display", "none");--}}
+{{--            $(id).css("display", "block");--}}
+
+{{--            window.activeGraphId = id;--}}
+{{--        });--}}
+
+{{--        // e => {--}}
+{{--        //     $("tradingview-widget-copyright a").attr("href", function () {--}}
+{{--        //         $("#sel option:selected").val();--}}
+{{--        //     })--}}
+{{--        // }--}}
+{{--        // $("#sel:selected").val();--}}
+
+{{--        --}}{{--let getID = document.getElementById("{{ $nameItem->name }}");--}}
+
+{{--        --}}{{--document.getElementById("sel").addEventListener("change", function(){--}}
+{{--        --}}{{--    document.getElementById(getID).innerHTML = "BINANCE- "+ getID;--}}
+
+{{--        //        })--}}
+{{--    </script>--}}
 
     <!-- TODO  СДЕЛАТЬ ЦИКЛ С БД-->
-    <div id="BNBUSDT">
-        <style>#BNBUSDT {
-                display: none;
-            }</style>
+    <div id="<?php echo $sel; ?>">
+
         <!-- TradingView Widget BEGIN BNBUSDT tradingview_504ac-->
         <div class="tradingview-widget-container">
             <div id="tradingview_504ac"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BINANCE-BNBUSDT/"
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BINANCE-<?php echo $sel; ?>/"
                                                          rel="noopener" target="_blank"><span class="blue-text">BNBUSDT Chart</span></a>
                 by TradingView
             </div>
@@ -133,7 +151,7 @@
                     {
                         "width": 980,
                         "height": 610,
-                        "symbol": "BINANCE:BNBUSDT",
+                        "symbol": "BINANCE:<?php echo $sel; ?>",
                         "interval": "D",
                         "timezone": "Etc/UTC",
                         "theme": "Light",
@@ -149,111 +167,7 @@
         </div>
         <!-- TradingView Widget END -->
     </div>
-    <div id="MANABTC">
-        <style>#MANABTC {
-                display: none;
-            }</style>
-        <!-- TradingView Widget BEGIN MANABTC tradingview_f2477-->
-        <div class="tradingview-widget-container">
-            <div id="tradingview_f2477"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BINANCE-MANABTC/"
-                                                         rel="noopener" target="_blank"><span class="blue-text">MANABTC Chart</span></a>
-                by TradingView
-            </div>
-            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-            <script type="text/javascript">
-                new TradingView.widget(
-                    {
-                        "width": 980,
-                        "height": 610,
-                        "symbol": "BINANCE:MANABTC",
-                        "interval": "D",
-                        "timezone": "Etc/UTC",
-                        "theme": "Light",
-                        "style": "1",
-                        "locale": "en",
-                        "toolbar_bg": "#f1f3f6",
-                        "enable_publishing": false,
-                        "allow_symbol_change": true,
-                        "container_id": "tradingview_f2477"
-                    }
-                );
-            </script>
-        </div>
-        <!-- TradingView Widget END -->
-    </div>
-    <div id="MANAETH">
-        <style>
-            #MANAETH {
-                display: none;
-            }
-        </style>
-        <!-- TradingView Widget BEGIN MANAETH tradingview_1efae-->
-        <div class="tradingview-widget-container">
-            <div id="tradingview_1efae"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BINANCE-MANAETH/"
-                                                         rel="noopener" target="_blank"><span class="blue-text">MANAETH Chart</span></a>
-                by TradingView
-            </div>
-            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-            <script type="text/javascript">
-                new TradingView.widget(
-                    {
-                        "width": 980,
-                        "height": 610,
-                        "symbol": "BINANCE:MANAETH",
-                        "interval": "D",
-                        "timezone": "Etc/UTC",
-                        "theme": "Light",
-                        "style": "1",
-                        "locale": "en",
-                        "toolbar_bg": "#f1f3f6",
-                        "enable_publishing": false,
-                        "allow_symbol_change": true,
-                        "container_id": "tradingview_1efae"
-                    }
-                );
-            </script>
-        </div>
-        <!-- TradingView Widget END -->
-    </div>
-    <div id="BNBBTC">
 
-
-        <style>
-            #BNBBTC {
-                display: none;
-            }
-        </style>
-        <!-- TradingView Widget BEGIN BNBBTC tradingview_b66ec-->
-        <div class="tradingview-widget-container">
-            <div id="tradingview_b66ec"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BINANCE-BNBBTC/"
-                                                         rel="noopener" target="_blank"><span
-                            class="blue-text">BNBBTC Chart</span></a> by TradingView
-            </div>
-            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-            <script type="text/javascript">
-                new TradingView.widget(
-                    {
-                        "width": 980,
-                        "height": 610,
-                        "symbol": "BINANCE:BNBBTC",
-                        "interval": "D",
-                        "timezone": "Etc/UTC",
-                        "theme": "Light",
-                        "style": "1",
-                        "locale": "en",
-                        "toolbar_bg": "#f1f3f6",
-                        "enable_publishing": false,
-                        "allow_symbol_change": true,
-                        "container_id": "tradingview_b66ec"
-                    }
-                );
-            </script>
-        </div>
-        <!-- TradingView Widget END -->
-    </div>
 
 
 
