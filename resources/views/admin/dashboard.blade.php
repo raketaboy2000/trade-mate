@@ -93,7 +93,7 @@
 
 
 
-    <select id="sel">
+    <select id="sel" autofocus=BNBUSDT>
 
         @foreach ($names_value as $nameItem)
             <option value="{{ $nameItem->name }}">{{$nameItem->name }}</option>
@@ -103,7 +103,7 @@
     </select>
 
     <script>
-        window.activeGraphId = '#BNBUSDT';
+        window.activeGraphId = '#MANABTC';
 
         $("#sel").change(e => {
             let id = '#' + e.target.value;
@@ -117,6 +117,9 @@
 
     <!-- TODO  СДЕЛАТЬ ЦИКЛ С БД-->
     <div id="BNBUSDT">
+        <style>#BNBUSDT {
+                display: none;
+            }</style>
         <!-- TradingView Widget BEGIN BNBUSDT tradingview_504ac-->
         <div class="tradingview-widget-container">
             <div id="tradingview_504ac"></div>
