@@ -71,9 +71,7 @@
 
     <?
 
-    //use Binance\API;
-    //    require 'vendor/jaggedsoft/php-binance-api/php-binance-api.php';
-    //    require 'vendor/autoload.php';
+
 
     $api = new Binance\API("u5ZUqga77ekuzfIXX1rDeaYUoht1M2jBy98wFxMpgWBrT09fRubKatuist9zK7LJ", "ptLkhENqmxO93CNH3dguXfwhdE9TK5h1QZMV6ifS8D06AXVYRd7S8sWcSAFWuO5V");
     $tickers = $api->prices();
@@ -108,41 +106,16 @@
         <input type="submit">
     </form>
 
-{{--    <script>--}}
-{{--        window.activeGraphId = '#MANABTC';--}}
 
-{{--        $("#sel").change(e => {--}}
-{{--            let id = '#' + e.target.value;--}}
 
-{{--            $(window.activeGraphId).css("display", "none");--}}
-{{--            $(id).css("display", "block");--}}
 
-{{--            window.activeGraphId = id;--}}
-{{--        });--}}
-
-{{--        // e => {--}}
-{{--        //     $("tradingview-widget-copyright a").attr("href", function () {--}}
-{{--        //         $("#sel option:selected").val();--}}
-{{--        //     })--}}
-{{--        // }--}}
-{{--        // $("#sel:selected").val();--}}
-
-{{--        --}}{{--let getID = document.getElementById("{{ $nameItem->name }}");--}}
-
-{{--        --}}{{--document.getElementById("sel").addEventListener("change", function(){--}}
-{{--        --}}{{--    document.getElementById(getID).innerHTML = "BINANCE- "+ getID;--}}
-
-{{--        //        })--}}
-{{--    </script>--}}
-
-    <!-- TODO  СДЕЛАТЬ ЦИКЛ С БД-->
     <div id="<?php echo $sel; ?>">
 
-        <!-- TradingView Widget BEGIN BNBUSDT tradingview_504ac-->
+        <!-- TradingView Widget BEGIN tradingview_504ac-->
         <div class="tradingview-widget-container">
             <div id="tradingview_504ac"></div>
             <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BINANCE-<?php echo $sel; ?>/"
-                                                         rel="noopener" target="_blank"><span class="blue-text">BNBUSDT Chart</span></a>
+                                                         rel="noopener" target="_blank"><span class="blue-text"><?php echo $sel; ?> Chart</span></a>
                 by TradingView
             </div>
             <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
@@ -174,115 +147,7 @@
 
     </div>
 
-    {{--    <div style="width:100%;">--}}
-    {{--        <canvas id="canvas"></canvas>--}}
-    {{--    </div>--}}
-    {{--    <script>--}}
-    {{--        var config = {--}}
-    {{--            type: 'line',--}}
-    {{--            data: {--}}
-    {{--                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],--}}
-    {{--                datasets: [{--}}
-    {{--                    label: 'dataset - big points',--}}
-    {{--                    data: [--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor()--}}
-    {{--                    ],--}}
-    {{--                    backgroundColor: window.chartColors.red,--}}
-    {{--                    borderColor: window.chartColors.red,--}}
-    {{--                    fill: false,--}}
-    {{--                    borderDash: [5, 5],--}}
-    {{--                    pointRadius: 15,--}}
-    {{--                    pointHoverRadius: 10,--}}
-    {{--                }, {--}}
-    {{--                    label: 'dataset - individual point sizes',--}}
-    {{--                    data: [--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor()--}}
-    {{--                    ],--}}
-    {{--                    backgroundColor: window.chartColors.blue,--}}
-    {{--                    borderColor: window.chartColors.blue,--}}
-    {{--                    fill: false,--}}
-    {{--                    borderDash: [5, 5],--}}
-    {{--                    pointRadius: [2, 4, 6, 18, 0, 12, 20],--}}
-    {{--                }, {--}}
-    {{--                    label: 'dataset - large pointHoverRadius',--}}
-    {{--                    data: [--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor()--}}
-    {{--                    ],--}}
-    {{--                    backgroundColor: window.chartColors.green,--}}
-    {{--                    borderColor: window.chartColors.green,--}}
-    {{--                    fill: false,--}}
-    {{--                    pointHoverRadius: 30,--}}
-    {{--                }, {--}}
-    {{--                    label: 'dataset - large pointHitRadius',--}}
-    {{--                    data: [--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor(),--}}
-    {{--                        randomScalingFactor()--}}
-    {{--                    ],--}}
-    {{--                    backgroundColor: window.chartColors.yellow,--}}
-    {{--                    borderColor: window.chartColors.yellow,--}}
-    {{--                    fill: false,--}}
-    {{--                    pointHitRadius: 20,--}}
-    {{--                }]--}}
-    {{--            },--}}
-    {{--            options: {--}}
-    {{--                responsive: true,--}}
-    {{--                legend: {--}}
-    {{--                    position: 'bottom',--}}
-    {{--                },--}}
-    {{--                hover: {--}}
-    {{--                    mode: 'index'--}}
-    {{--                },--}}
-    {{--                scales: {--}}
-    {{--                    xAxes: [{--}}
-    {{--                        display: true,--}}
-    {{--                        scaleLabel: {--}}
-    {{--                            display: true,--}}
-    {{--                            labelString: 'Month'--}}
-    {{--                        }--}}
-    {{--                    }],--}}
-    {{--                    yAxes: [{--}}
-    {{--                        display: true,--}}
-    {{--                        scaleLabel: {--}}
-    {{--                            display: true,--}}
-    {{--                            labelString: 'Value'--}}
-    {{--                        }--}}
-    {{--                    }]--}}
-    {{--                },--}}
-    {{--                title: {--}}
-    {{--                    display: true,--}}
-    {{--                    text: 'Chart.js Line Chart - Different point sizes'--}}
-    {{--                }--}}
-    {{--            }--}}
-    {{--        };--}}
 
-    {{--        window.onload = function() {--}}
-    {{--            var ctx = document.getElementById('canvas').getContext('2d');--}}
-    {{--            window.myLine = new Chart(ctx, config);--}}
-    {{--        };--}}
-    {{--    </script>--}}
 
 
 
