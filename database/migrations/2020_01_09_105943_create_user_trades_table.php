@@ -16,7 +16,7 @@ class CreateUserTradesTable extends Migration
         Schema::create('user_trades', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('key');
+            $table->string('key_acc');
             $table->string('skey');
             $table->integer('user_id');
             $table->integer('trade_id');

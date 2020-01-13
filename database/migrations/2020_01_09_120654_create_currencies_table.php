@@ -17,7 +17,7 @@ class CreateCurrenciesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('value');
-            $table->string('body');
+
         });
     }
 

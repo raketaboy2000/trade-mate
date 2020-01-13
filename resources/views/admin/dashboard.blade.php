@@ -86,7 +86,7 @@
     }
     $names_value = DB::select('select name from currencies;');
 
-    $sel = $_GET['sel'];
+
     ?>
 
 
@@ -95,13 +95,17 @@
 
 
     <form id="select" method="get">
-        <select id="sel" name="sel" >
-
+        <select id="sel" name="sel">
+            <?
+            if (!isset($_GET['sel'])){
+                $_GET['sel']="BNBUTS";
+            }
+            $sel = $_GET['sel'];?>
             @foreach ($names_value as $nameItem)
                 <option value="{{ $nameItem->name }}">{{$nameItem->name }}</option>
             @endforeach
 
-
+                <?$_GET['sel']=$sel;?>
         </select>
         <input type="submit">
     </form>
@@ -114,8 +118,9 @@
         <!-- TradingView Widget BEGIN tradingview_504ac-->
         <div class="tradingview-widget-container">
             <div id="tradingview_504ac"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BINANCE-<?php echo $sel; ?>/"
-                                                         rel="noopener" target="_blank"><span class="blue-text"><?php echo $sel; ?> Chart</span></a>
+            <div class="tradingview-widget-copyright"><a
+                        href="https://www.tradingview.com/symbols/BINANCE-<?php echo $sel; ?>/"
+                        rel="noopener" target="_blank"><span class="blue-text"><?php echo $sel; ?> Chart</span></a>
                 by TradingView
             </div>
             <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
