@@ -26,3 +26,6 @@ Route::group([
     Route::post('/profile/update2fa', 'ProfileController@update2fa')->name('change2fa');
     Route::get('/home', 'HomeController@index')->name('home');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
