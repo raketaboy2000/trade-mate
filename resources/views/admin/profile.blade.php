@@ -26,24 +26,12 @@
 
     <html class="theme-init dark">
     <link href="./trade/app.90d66741cc430653d73d88db1d19b6f9.css" rel="stylesheet">
-    <?if (!isset($_GET['exchanges'])) {
-        $_GET['exchanges'] = "";
 
-    }
-    if (!isset($_GET['name_ac'])) {
-        $_GET['name_ac'] = 1;
 
-    }
-    if (!isset($_GET['key'])) {
-        $_GET['key'] = 1;
 
-    }
-    if (!isset($_GET['secret'])) {
-        $_GET['secret'] = 1;
+    <form method="post">
+        @csrf
 
-    }
-    ?>
-    <form method="get">
         <label>Биржы</label>
         <select name="exchanges">
             <?
@@ -63,35 +51,72 @@
     </form>
     <?php
 
-            If(!isset($_GET['exchanges'])){
-                $trade_id=1;
-                $exchange = $_GET['exchanges'];
+//            $user=Auth::id();
+//            $exchange = $_GET['exchanges'];
+//            $name_ac = $_GET['name_ac'];
+//            $key_acc = $_GET['key'];
+//            $secret = $_GET['secret'];
 
-
-                $name_ac = $_GET['name_ac'];
-                $key_acc = $_GET['key'];
-                $secret = $_GET['secret'];
-                //
-                $user = Auth::id();
-
-
-
-
-
-                $results = DB::select('select id from trades where name = ?', [$exchange]);
-                global $trade_id;
-                foreach ($results as $key => $object) {
-
-                    $trade_id = $object->id;
-                }
-
-                DB::insert('insert into user_trades (name,key_acc,skey,user_id,trade_id) values (?, ?, ?, ?, ?)', [$name_ac, $key_acc, $secret, $user, $trade_id]);
-            }
-
-
-
+//    $user = Auth::id();
+//if(!isset($_GET)){
+//        $trade_id = 1;
+//        $exchange = $_GET['exchanges'];
+//        $name_ac = $_GET['name_ac'];
+//        $key_acc = $_GET['key'];
+//        $secret = $_GET['secret'];
+//
+//
+//        $results = DB::select('select id from trades where name = ?', [$exchange]);
+//        global $trade_id;
+//        foreach ($results as $key => $object) {
+//
+//            $trade_id = $object->id;
+//        }
+//
+//        DB::insert('insert into user_trades (name,key_acc,skey,user_id,trade_id) values (?, ?, ?, ?, ?)', [$name_ac, $key_acc, $secret, $user, $trade_id]);
+//}
+//    $results_trade_user = DB::select('select user_id from user_trades where id = ?', [$user]);
+//    global $user_id;
+//    foreach ($results_trade_user as $key => $object) {
+//
+//        $user_id = $object->user_id;
+//    }
+//
+//    $results_trade = DB::select('select trade_id from user_trades where id = ?', [$user_id]);
+//    global $results_trade_id;
+//    foreach ($results_trade as $key => $object) {
+//
+//        $results_trade_id = $object->trade_id;
+//    }
+//    $result = DB::select('select * from trades where id = ?', [$results_trade_id]);
+//
+//    global $result_id;
+//    foreach ($result as $key => $object) {
+//
+//        $result_id = $object->name;
+//
+//    }
+//
+//    $results_end = DB::select('select name from user_trades where user_id = ?', [$user_id]);
+//
+//    global $results_end_name;
+//    foreach ($results_end as $key => $object) {
+//
+//        $results_end_name = $object->name;
+//
+//    }
+//    echo $result_id . " " . $results_end_name;
+//
+//
 
     ?>
+    <div style="color:white;">
+        Рабочие аккаунты
+
+        <br>
+
+
+    </div>
     <div>
         <div>
             {{--<div id="app"><!---->--}}

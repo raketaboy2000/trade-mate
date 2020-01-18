@@ -98,7 +98,7 @@
         <select id="sel" name="sel">
             <?
             if (!isset($_GET['sel'])){
-                $_GET['sel']="BNBUTS";
+                $_GET['sel']="ETHBTC";
             }
             $sel = $_GET['sel'];?>
             @foreach ($names_value as $nameItem)

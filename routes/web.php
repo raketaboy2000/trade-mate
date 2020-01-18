@@ -13,6 +13,9 @@ Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
 Route::get('verify/resend', 'Auth\TwoFactorController@resend')->name('verify.resend');
 Route::resource('verify', 'Auth\TwoFactorController')->only(['index', 'store']);
 Route::group([
