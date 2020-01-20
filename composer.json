@@ -9,6 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "adman9000/laravel-binance": "dev-master",
+        "baitercel/binance-api-php": "dev-master",
         "fideloper/proxy": "^4.0",
         "jaggedsoft/php-binance-api": "^0.5.14",
         "jeroennoten/laravel-adminlte": "^3.0",
