@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="02178827-fb9d-4f0b-a430-a6e8af20ce9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/faqstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/faqstyle.css" afterDir="false" />
+=======
+    <list default="true" id="02178827-fb9d-4f0b-a430-a6e8af20ce9a" name="Default Changelist" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+>>>>>>> master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/adminlte.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="8850">
               <caret line="354" column="73" selection-start-line="354" selection-start-column="67" selection-end-line="354" selection-end-column="73" />
             </state>
@@ -47,6 +54,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4075">
               <caret line="163" selection-start-line="163" selection-end-line="169" selection-end-column="5" />
+=======
+            <state relative-caret-position="357">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -307,10 +318,16 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1066" />
+=======
+    <option name="x" value="51" />
+    <option name="width" value="1680" />
+    <option name="height" value="1000" />
+>>>>>>> master
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -331,17 +348,27 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="public" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -367,6 +394,11 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
             </path>
           </expand>
           <select />
@@ -443,6 +475,7 @@
       <workItem from="1578252593616" duration="5509000" />
       <workItem from="1578372436141" duration="19044000" />
       <workItem from="1578551261841" duration="23625000" />
+<<<<<<< HEAD
       <workItem from="1578638794730" duration="1894000" />
       <workItem from="1578677933124" duration="9697000" />
       <workItem from="1578814230252" duration="8283000" />
@@ -504,6 +537,9 @@
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
       <updated>1578676064206</updated>
+=======
+      <workItem from="1578638794730" duration="3171000" />
+>>>>>>> master
     </task>
     <task id="LOCAL-00008" summary="phpstorm">
       <created>1578814672539</created>
@@ -614,7 +650,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="178170000" />
+=======
+    <option name="totallyTimeSpent" value="77600000" />
+>>>>>>> master
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -623,6 +663,7 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.22974414" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32967034" />
@@ -637,6 +678,22 @@
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4978678" weight="0.60879123" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021322" side_tool="true" weight="0.60879123" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.16991343" />
+=======
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32967034" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.41098902" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.41098902" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.16991343" />
+>>>>>>> master
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -671,6 +728,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -731,6 +789,11 @@
     <MESSAGE value="изменение лого" />
     <MESSAGE value="1)сделан (2 из 6) FAQ;&#10;2) исправлены ошибки с шаблонами" />
     <option name="LAST_COMMIT_MESSAGE" value="1)сделан (2 из 6) FAQ;&#10;2) исправлены ошибки с шаблонами" />
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+>>>>>>> master
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/react/socket/tests/TcpConnectorTest.php">
@@ -996,6 +1059,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1003,6 +1067,12 @@
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -1013,10 +1083,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/css/faqstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="98" column="28" lean-forward="true" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
