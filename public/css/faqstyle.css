@@ -91,7 +91,7 @@
     display: flex;
     /*border-left: 1px solid black;*/
 }
-.accordionItemContent_flex p,ul {
+.accordionItemContent_flex p, .accordionItemContent_flex ul {
     font-size: 17px;
     padding: 20px 0 20px 20px;
     border-left: 1px solid black;
