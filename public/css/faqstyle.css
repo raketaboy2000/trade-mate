@@ -1,3 +1,4 @@
+body{background: #38435b;}
 
 .accordionWrapper {
     padding: 30px;
@@ -22,7 +23,7 @@
     margin: 0px 0px 10px 0px;
     padding: 10px;
     background: #38435b;
-    color: #fff;
+    color: #dfe7f7;
     width: 100%;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -45,8 +46,9 @@
 
 .open .accordionItemContent {
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    color: #dfe7f7;
+    background: #38435b;
+    /*border: 1px solid #ddd;*/
     width: 100%;
     margin: 0px 0px 10px 0px;
     display: block;
@@ -80,23 +82,30 @@
     -moz-border-radius-bottomleft: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    background-color: #bdc3c7;
-    color: #7f8c8d;
+    background-color: #adb3b7;
+    color: #dfe7f7;
 }
 .accordionItemContent_h3{
     padding: 20px 0 20px 0;
-    min-width: 40%;
+    min-width: 45%;
+    font-size: 15px;
+
+    font-weight: 700;
+
+
+    line-height: 1.3em;
 }
 .accordionItemContent_flex{
     display: flex;
     /*border-left: 1px solid black;*/
 }
 .accordionItemContent_flex p, .accordionItemContent_flex ul {
-    font-size: 17px;
+    font-size: 13px;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid black;
+    border-left: 1px solid #47577a!important;
 }
+
 .accordionItemContent_block{
     display: block;
-    /*border-left: 1px solid black;*/
+
 }
