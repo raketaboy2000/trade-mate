@@ -240,7 +240,7 @@ return [
         ],
         [
             'text' => ' ЧаВо',
-            'url'  => 'admin/settings',
+            'url'  => 'faq',
             'icon' => 'fas fa-book',
         ],
 
